@@ -13,7 +13,7 @@ function getBooksAndMovies() {
 }
 
 const getBooksAndMoviesPromise = getBooksAndMovies();
-getBooksAndMoviesPromise.then((results) => {
+getBooksAndMoviesPromise.then(results => {
     console.log('getBooksAndMoviesPromise', results);
 });
 
