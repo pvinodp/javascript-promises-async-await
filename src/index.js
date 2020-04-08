@@ -2,7 +2,7 @@ import { fetchMovies, fetchBooks } from './services';
 
 function getBooksAndMovies() {
 
-    Promise.all([fetchMovies(), fetchBooks()])
+    return Promise.all([fetchMovies(), fetchBooks()])
         .then(([books, movies]) => {
             books,
                 movies
